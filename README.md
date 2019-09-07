@@ -15,17 +15,17 @@ Fun Bus wants you to make their site more interactive. They are relying on you t
 
 **Follow these steps for completing your project.**
 
-* [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into master (student's  Repo). **Please don't merge your own pull request**
+* [x] Submit a Pull-Request to merge `<firstName-lastName>` Branch into master (student's  Repo). **Please don't merge your own pull request**
 * [ ] Add your team lead as a reviewer on the pull-request
 * [ ] Your team lead will count the project as complete by merging the branch back into master.
 
 ## Task 1: Set Up LESS Preprocessor
 
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your team lead for help.
-* [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
-* [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
-* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+* [x] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your team lead for help.
+* [x] Open your terminal and navigate to your preprocessing project by using the `cd` command
+* [x] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [x] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
+* [x] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ## Task 2: Create Unique Event Listeners
 
