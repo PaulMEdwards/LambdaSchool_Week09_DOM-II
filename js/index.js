@@ -12,7 +12,7 @@ const nav_links = document.querySelectorAll('.nav-link');
 nav_links.forEach((a) => {
   a.addEventListener('click', (e) => {
     console.log('link was clicked!');
-    event.preventDefault();
+    e.preventDefault();
   });
   a.addEventListener('focusin', (e) => {
     a.style.transform = 'scale(1.25)';
@@ -22,6 +22,12 @@ nav_links.forEach((a) => {
     a.style.transform = 'scale(1.0)';
     a.style.transition = 'transform 0.125s ease-in-out';
   });
+});
+
+const nav = document.querySelector('nav');
+nav.addEventListener('click', (e) => {
+  e.stopPropagation();
+  console.log('event propagation stopped!');
 });
 
 const headerImg = document.querySelector('header.intro > img');
