@@ -4,8 +4,9 @@
 
 const body = document.querySelector('body');
 window.addEventListener('load', (e) => {
-  console.log('page is fully loaded');
+  console.log('page is fully loaded...');
   body.style.background = 'linear-gradient(white, #BBD1EA, #507DBC)';
+  console.log('background gradient applied.');
 });
 
 const nav_links = document.querySelectorAll('.nav-link');
@@ -17,10 +18,12 @@ nav_links.forEach((a) => {
   a.addEventListener('focusin', (e) => {
     a.style.transform = 'scale(1.25)';
     a.style.transition = 'transform 0.125s ease-in-out';
+    console.log(`${a.textContent} link focus in.`);
   });
   a.addEventListener('focusout', (e) => {
     a.style.transform = 'scale(1.0)';
     a.style.transition = 'transform 0.125s ease-in-out';
+    console.log(`${a.textContent} link focus out.`);
   });
 });
 
@@ -33,9 +36,11 @@ nav.addEventListener('click', (e) => {
 const headerImg = document.querySelector('header.intro > img');
 headerImg.addEventListener('click', (e) => {
   headerImg.src = 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&h=240&q=80';
+  console.log(`${headerImg.alt} image changed.`);
 });
 headerImg.addEventListener('dblclick', (e) => {
   headerImg.src = 'img/fun-bus.jpg';
+  console.log(`${headerImg.alt} image restored.`);
 });
 
 const contentImgs = document.querySelectorAll('div.img-content > img');
@@ -43,20 +48,24 @@ contentImgs.forEach((img) => {
   img.addEventListener('mouseover', (e) => {
     img.style.transform = 'scale(1.15)';
     img.style.transition = 'transform 0.5s ease-in-out';
+    console.log(`${img.alt} image scaled up.`);
   });
   
   img.addEventListener('mouseout', (e) => {
     img.style.transform = 'scale(1.0)';
     img.style.transition = 'transform 0.5s ease-in-out';
+    console.log(`${img.alt} image scale reset.`);
   });
 });
 
 const destinationImg = document.querySelector('section.content-destination > img');
 destinationImg.addEventListener('click', (e) => {
   destinationImg.src = 'https://images.unsplash.com/photo-1437719417032-8595fd9e9dc6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&h=200&q=80';
+  console.log(`${destinationImg.alt} image changed.`);
 });
 destinationImg.addEventListener('dblclick', (e) => {
   destinationImg.src = 'img/destination.jpg';
+  console.log(`${destinationImg.alt} image restored.`);
 });
 
 const buttons = document.querySelectorAll('div.btn');
